@@ -4,5 +4,5 @@ COPY package*.json ./
 RUN npm ci --only=production
 COPY . .
 EXPOSE 8789
-CMD ["node", "index.js"] 
+CMD ["node", "/src/server.js"] 
 # Note: replace "index.js" with the actual entry point file if named differently
