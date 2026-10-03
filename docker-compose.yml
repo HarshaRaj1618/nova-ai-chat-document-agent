@@ -6,7 +6,7 @@ services:
     ports:
       - "8789:8789"
     environment:
-      - GEMINI_API_KEY=AQ.Ab8RN6Kc5QOFhJFIB2vsb7hKT7pQ92MBOiHOIbvnXGrT-UP0Vg
+      - GEMINI_API_KEY=API_KEY
       - GEMINI_MODEL=gemini-3.8-flash
       - PORT=8789
       - CLIENT_ORIGIN=http://localhost:5174
