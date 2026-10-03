@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: nova-document-ai-agent
+    runtime: node
+    buildCommand: npm install && npm --prefix client install && npm --prefix client run build && npm --prefix server install
+    startCommand: npm --prefix server start
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.8-flash
+      - key: CLIENT_ORIGIN
+        value: https://your-service.onrender.com
+      - key: PORT
+        value: 10000
